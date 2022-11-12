@@ -28,9 +28,20 @@
 
 .cardBack {
   background-color: #aaa;
-  display: none;
+
 }
 
 .cardFront {
   background-color: #333; 
+    display: none;
+}
+
+.pic1 .cardFront {
+  background-image: url(images/weenie.png);
+  background-size: cover;
+}
+
+.pic2 .cardFront {
+  background-image: url(images/squirrel.png);
+  background-size: cover;
 }
