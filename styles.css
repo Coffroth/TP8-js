@@ -13,8 +13,9 @@
 }
 
 .card {
+  position: relative;
   width: 20vw;
-  height: 20vh;
+  height: 30vh;
   float: left;
   border: 1vw solid #fff;
 }
@@ -27,14 +28,20 @@
 
 .cardBack {
   bacground-color: #aaa;
-  display: none;
+
 }
 
 .cardFront {
   background-color: #333;
+    display: none;
 }
 
 .pic1 .cardFront {
   background-image: url(images/weenie.png);
+    background-size: cover;
+}
+
+.pic2 .cardFront {
+  background-image: url(images/squirrel.png);
     background-size: cover;
 }
