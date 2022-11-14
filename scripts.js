@@ -106,9 +106,22 @@ function checkWinning() {
   document.getElementById("mainTable").innerHTML = "Congratulations! You have paired all the funny animals. You've won the game."
 }
 
+function shuffleCards() {
+  table = document.querySelector("#mainTable");
+  cardCount = table.children.length;
+  
+  for (c = 0; c < cardCount; c++) {
+   randomCard = Math.floor( Math.random() * cardCount );
+       cardToMove = table.children[randomCard];
+       table.appendChild( cardToMove );
+}
+}
+
 // stuff to do when page loads
 window.onload = function() {
-
+  
+  shuffleCards();
+  
   cardList = document.querySelectorAll(".card"); //collection of cards
   cardCount = cardList.length; // how many cards are on the table
 
